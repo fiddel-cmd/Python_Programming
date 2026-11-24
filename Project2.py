@@ -1,11 +1,11 @@
 # variables
 distance_mi = 1
 # variable with bool condition not raining 
-is_raining = False
+is_raining = True
 #variable with a bool condition do not have a bike
-has_bike = False
+has_bike = True
 # variable with a bool condition doesn't have a car
-has_car = False
+has_car =  True
 # variable with a bool condition doesn't have a ride app.
 has_ride_share_app = False
 
