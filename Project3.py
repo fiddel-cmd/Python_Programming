@@ -1,4 +1,5 @@
-available_eggs = 1
+
+available_eggs = 0
 available_flour = 2
 available_sugar = 3
 
@@ -17,4 +18,15 @@ def use_eggs(available_eggs, eggs_to_use):
         return available_eggs
     print(f"{eggs_to_use} egg(s) used out of {available_eggs} available.")
     return available_eggs - eggs_to_use
-use_eggs(100,90)
+use_eggs(available_eggs,90)
+
+print()
+
+def make_fried_egg(available_eggs):
+    has_enough_eggs = available_eggs >= 1 
+    if has_enough_eggs:
+        available_eggs = use_eggs(available_eggs,1)
+        print("Made a fried eggs.Yummy!")
+    else:
+        print("Could not make a fried egg.Not enough eggs!")
+make_fried_egg(available_eggs)
